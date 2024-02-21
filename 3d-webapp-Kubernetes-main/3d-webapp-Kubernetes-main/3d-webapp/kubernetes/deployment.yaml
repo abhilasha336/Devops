@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: my-api
+  name: my-api
+  namespace: web-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-api
+  template:
+    metadata:
+      labels:
+        app: my-api
+    spec:
+      containers:
+        - image: abhilasha336336/3d-webapp
+          name: my-api
+          ports:
+            - containerPort: 5000
