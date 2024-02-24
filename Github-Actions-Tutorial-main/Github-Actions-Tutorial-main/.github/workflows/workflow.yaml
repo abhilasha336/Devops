@@ -30,4 +30,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Check
         run: |
-          bash ./hello.sh
+            hello.sh
