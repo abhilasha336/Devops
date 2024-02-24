@@ -1,1 +1,34 @@
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  abhilashbuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: |
+          echo "Build"
+      - name: Test
+        run: |
+          echo "Test"
+      - name: Deploy
+        run: |
+          echo "Deploy"
+  abhilashcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check
+        run: |
+          echo "Check"
+  abhilashbashexecuter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Check
+        run: |
+          bash ../hello.sh
