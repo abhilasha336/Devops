@@ -24,10 +24,10 @@ jobs:
       - name: Check
         run: |
           echo "Check"
-  abhilashbashexecuter:
+  abhilashbashexecuter:s
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Check
         run: |
-          bash ../hello.sh
+          bash ./hello.sh
