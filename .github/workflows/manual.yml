@@ -17,17 +17,4 @@ jobs:
       - name: Deploy
         run: |
           echo "Deploy"
-  abhilashcheck:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Check
-        run: |
-          echo "Check"
-  abhilashbashexecuter:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Check
-        run: |
-          bash hello.sh
+
