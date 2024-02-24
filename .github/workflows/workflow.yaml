@@ -32,5 +32,5 @@ jobs:
       - name: Check
             
         run: |
-          ././hello.sh
+          hello.sh
 
