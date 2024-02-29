@@ -1,0 +1,20 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  abhilashbuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: |
+          echo "Build"
+      - name: Test
+        run: |
+          echo "Test"
+      - name: Deploy
+        run: |
+          echo "Deploy"
+
