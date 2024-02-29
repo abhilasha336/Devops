@@ -1,13 +1,3 @@
-# vpc.tf
-
-provider "aws" {
-  region = "ap-southeast-2" # Specify your desired region
-}
-
-resource "aws_vpc" "abilash_vpc" {
-  cidr_block = "10.0.0.0/16" # Specify the CIDR block for your VPC
-
-  tags = {
-    Name = "AbhilashVPC"
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e883813453895dd445147a0426b9a53c8b3e0723610625f0d1b21e81b31b9b1
+size 246
