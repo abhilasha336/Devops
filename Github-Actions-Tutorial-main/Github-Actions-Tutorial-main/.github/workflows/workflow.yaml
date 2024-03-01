@@ -24,12 +24,18 @@ jobs:
       - name: Check
         run: |
           echo "Check"
+<<<<<<< HEAD
   abhilashbashexecuter:
+=======
+>>>>>>> 547e3d5e19fb8247c4f786bb727663450552dd64
   abhilashbashexecuter:s
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Check
         run: |
+<<<<<<< HEAD
           bash hello.sh
+=======
+>>>>>>> 547e3d5e19fb8247c4f786bb727663450552dd64
             hello.sh
